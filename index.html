@@ -420,13 +420,20 @@
             <use href="./images/symbol.svg#icon-Vector-3"></use>
           </svg>
         </button>
-        <p class="modal-title">
-          Leave your contacts and we will call you back
-        </p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <input type="name-form" class="modal-input">
-          <input type="name-form" class="modal-input">
-          <input type="name-form" class="modal-input">
+          <label class="modal-lab">
+            <span>Name</span>
+            <input type="name" name="user-name" class="modal-input" required />
+          </label>
+          <label class="modal-lab">
+            <span>Phone</span>
+            <input type="tel" name="user-tel" class="modal-input" required />
+          </label>
+          <label class="modal-lab">
+            <span>Email</span>
+            <input type="email" name="user-email" class="modal-input" />
+          </label>
           <button class="submit-button" type="submit">Send</button>
         </form>
       </div>
