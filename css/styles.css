@@ -13,6 +13,7 @@
   --footer-team-soc-link: rgba(255, 255, 255, 0.1);
   --rgba: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-policy: #757575;
 }
 
 body {
@@ -575,6 +576,19 @@ img {
 
 /*------------------- backdrop ------------------ */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -595,7 +609,7 @@ img {
 }
 
 .modal {
-  width: 408px;
+  min-width: 408px;
   min-height: 576px;
   position: absolute;
   top: 50%;
@@ -655,7 +669,7 @@ img {
   outline: transparent;
 }
 
-.modal-input:focus, 
+.modal-input:focus,
 .modal-coment:focus {
   border-color: var(--hover-color);
 }
@@ -666,12 +680,18 @@ img {
   margin-bottom: 8px;
 }
 
+.privacy-policy {
+  color: var(--hover-color);
+}
+
 .input-wrap {
   position: relative;
 }
 
 .submit-button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--hover-color);
   border-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -679,6 +699,12 @@ img {
   color: var(--background-color);
   width: 169px;
   height: 56px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background: var(--hover-btn-color);
+  border-color: var(--hover-btn-color);
 }
 
 ::placeholder {
@@ -717,3 +743,46 @@ img {
   outline: transparent;
   /* color: rgba(117, 117, 117, 0.5); */
 }
+
+.check-text {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--modal-policy);
+  display: flex;
+  margin-bottom: 24px;
+}
+
+/* .check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--main-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: background-color 250ms var(--cubic);
+} */
+
+.check-text::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--main-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: background-color 250ms var(--cubic);
+
+  background: var(--background-color); 
+  isolation: isolate;
+  position: relative;
+} 
+
+.modal-check:checked + .check-text::before {
+  background: var(--hover-btn-color);
+  border: none;
+  background-image: url(../images/symbol.svg#icon-check);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 250ms var(--cubic);
+}
+
+
