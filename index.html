@@ -344,11 +344,38 @@
           </li>
         </ul>
       </div>
+
+      <div class="subsribe-email">
+        <p class="footer-social-media">Subscribe</p>
+        <div class="modal-field">
+          <label class="modal-input-text" for="user-name"></label>
+          <div class="input-wrap">
+            <input class="modal-input" id="user-name" name="user-name" type="name" required />
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="subscribe-push">
+        <button class="subscribe-button" type="submit">Subscribe
+        <svg class="subscribe-pic" width="24" height="24">
+          <use href="./images/symbol.svg#icon-Frame"></use>
+        </svg>
+      </button>
+      </div>
     </div>
   </footer>
 
+
+
+
+
+
+
+
+
   <div class="backdrop is-hidden" data-modal>
-  <!-- <div class="backdrop" data-modal> -->
+    <!-- <div class="backdrop" data-modal> -->
     <div class="modal">
       <button class="modal-close" type="button" data-modal-close>
         <svg class="button-x" width="8" height="8">
@@ -408,23 +435,12 @@
         <div class="modal-field">
           <label class="modal-input-text" for="user-text">
             Comment</label>
-            <textarea 
-            class="modal-coment" 
-            name="user-text" 
-            id="user-text" 
-            placeholder="Text input"
-            ></textarea>
-                  </div>
+          <textarea class="modal-coment" name="user-text" id="user-text" placeholder="Text input"></textarea>
+        </div>
 
         <div class="modal-field">
-          <input 
-          class="modal-check visually-hidden"
-          id="policy"
-          name="policy"
-          type="checkbox"
-          value="true"
-          required/>
-           <label class="check-text" for="policy">I accept the terms and conditions of the
+          <input class="modal-check visually-hidden" id="policy" name="policy" type="checkbox" value="true" required />
+          <label class="check-text" for="policy">I accept the terms and conditions of the
             <a class="privacy-policy" href=""> Privacy Policy</a>
             <span>
               <svg class="check-icon" width="10" height="8">

@@ -780,3 +780,31 @@ img {
   background: var(--hover-btn-color);
   border-color: var(--hover-btn-color);
 }
+
+.subscribe-pic {
+  fill: var(--background-color)
+}
+
+.subsribe-email {
+  box-sizing: border-box;
+position: absolute;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: 
+drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+}
+
+.subscribe-button {
+margin-left: 24px;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 16px;
+color: var(--background-color);
+position: absolute;
+background: var(--hover-color);
+border-radius: 4px;
+border: none;
+}
