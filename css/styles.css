@@ -666,6 +666,8 @@ img {
 
 .input-wrap {
   position: relative;
+  display: flex;
+  left: auto;
 }
 
 .modal-input {
@@ -680,10 +682,12 @@ img {
 .modal-input:focus,
 .modal-coment:focus {
   border-color: var(--hover-color);
+  transition: border-color 250ms var(--cubic);
 }
 
 .modal-input:focus + .modal-input-icon {
   fill: var(--hover-btn-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .modal-input-icon {
@@ -717,12 +721,16 @@ img {
   /* color: rgba(117, 117, 117, 0.5); */
 }
 
+.check-icon {
+  margin-right: auto;
+}
+
 .check-text {
+  display: flex;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--modal-policy);
-  display: flex;
   margin-bottom: 24px;
   position: relative;
 }
@@ -779,13 +787,15 @@ img {
 .submit-button:focus {
   background: var(--hover-btn-color);
   border-color: var(--hover-btn-color);
+  transition: background-color 250ms var(--cubic);
+  
 }
 
 .subscribe-pic {
   fill: var(--background-color)
 }
 
-.subsribe-email {
+.subscribe-email {
   box-sizing: border-box;
 position: absolute;
 border: 1px solid rgba(255, 255, 255, 0.3);
