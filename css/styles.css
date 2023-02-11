@@ -452,14 +452,6 @@ img {
   color: var(--hover-btn-color);
 }
 
-/* .customers-link:is(:hover, :focus) {
-    border-color: var(--hover-btn-color);
-}
-
-.customers-link:is(:hover, :focus) .customers-icon {
-    fill: var(--hover-btn-color);
-    
-} */
 
 /*------------------------- footer -----------------------------*/
 
@@ -509,7 +501,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .footer-taem-soc-item {}
@@ -532,6 +524,76 @@ img {
 
 .footer-team-soc-link:is(:hover, :focus) {
   background: var(--footer-hover-soc-link);
+}
+
+
+.subscribe-pic {
+  fill: var(--background-color)
+}
+
+.online-input::placeholder {
+  font-size: 12px;
+line-height: 2;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.online-input {
+  padding-left: 16px;
+  height: 40px;
+  width: 264px;
+  color: var(--background-color);
+  background: var(--main-color);
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter:
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.modal-subscribe {
+margin-top: 16px;
+}
+
+.footer-subscribe {
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  color: var(--background-color);
+}
+
+.footer-main-subscribe {
+  margin-left: 80px;
+  
+}
+
+.subscribe-push {
+}
+
+.subscribe-button {
+  margin-top: 40px;
+  height: 40px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  color: var(--background-color);
+  position: absolute;
+  background: var(--hover-color);
+  border-radius: 4px;
+  border: none;
 }
 
 /*----------------- PORTFOLIO -------------- */
@@ -685,7 +747,7 @@ img {
   transition: border-color 250ms var(--cubic);
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus+.modal-input-icon {
   fill: var(--hover-btn-color);
   transition: fill 250ms var(--cubic);
 }
@@ -757,7 +819,7 @@ img {
   fill: transparent
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked+.check-text span {
   background: var(--hover-btn-color);
   border: none;
   fill: var(--background-color);
@@ -788,33 +850,5 @@ img {
   background: var(--hover-btn-color);
   border-color: var(--hover-btn-color);
   transition: background-color 250ms var(--cubic);
-  
-}
 
-.subscribe-pic {
-  fill: var(--background-color)
-}
-
-.subscribe-email {
-  box-sizing: border-box;
-position: absolute;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: 
-drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-}
-
-.subscribe-button {
-margin-left: 24px;
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 24px;
-gap: 16px;
-color: var(--background-color);
-position: absolute;
-background: var(--hover-color);
-border-radius: 4px;
-border: none;
 }
