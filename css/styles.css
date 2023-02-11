@@ -764,7 +764,7 @@ margin-top: 16px;
 .modal-input-text span,
 .modal-input-text {
   margin-bottom: 4px;
-  display: block;
+  display: block; 
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
@@ -776,25 +776,22 @@ margin-top: 16px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 8px 16px;
   resize: none;
   outline: transparent;
+  padding: 8px 16px;
   resize: none;
   /* color: rgba(117, 117, 117, 0.5); */
 }
 
-.check-icon {
-  margin-right: auto;
-}
-
 .check-text {
   display: flex;
+  position: relative;
+  align-items: center;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--modal-policy);
   margin-bottom: 24px;
-  position: relative;
 }
 
 ::placeholder {
@@ -819,8 +816,8 @@ margin-top: 16px;
   fill: transparent
 }
 
-.modal-check:checked+.check-text span {
-  background: var(--hover-btn-color);
+.modal-check:checked + .check-text span {
+  background-color: var(--hover-btn-color);
   border: none;
   fill: var(--background-color);
   transition: background-color 250ms var(--cubic);
@@ -829,6 +826,7 @@ margin-top: 16px;
 .privacy-policy {
   color: var(--hover-color);
 }
+
 
 .submit-button {
   display: flex;

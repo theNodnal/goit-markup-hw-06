@@ -370,8 +370,8 @@
 
 
 
-  <!-- <div class="backdrop is-hidden" data-modal> -->
-    <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop" data-modal> -->
     <div class="modal">
       <button class="modal-close" type="button" data-modal-close>
         <svg class="button-x" width="8" height="8">
@@ -421,19 +421,14 @@
 
         <div class="modal-field">
           <input class="modal-check visually-hidden" id="policy" name="policy" type="checkbox" value="true" required />
-          <label class="check-text" for="policy">I accept the terms and conditions of the
-            <a class="privacy-policy" href=""> Privacy Policy</a>
-            <span>
-              <svg class="check-icon-inside" width="10" height="8">
-                <use href="./images/symbol.svg#icon-ok"></use>
-              </svg>
-            </span>
-          </label>
-        </div>
-
-        <div class="modal-field">
-          <input type="checkbox">
-          <label for="">ну що ?</label>
+          <label class="check-text" for="policy">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/symbol.svg#icon-ok"></use>
+                </svg>
+              </span>
+            I accept the terms and conditions of the .
+            <a class="privacy-policy" href=""> Privacy Policy</a></label>
         </div>
 
         <button class="submit-button" type="submit">Send</button>
