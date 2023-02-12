@@ -535,6 +535,7 @@ img {
   font-size: 12px;
 line-height: 2;
 display: flex;
+justify-content: center;
 align-items: center;
 letter-spacing: 0.04em;
 color: rgba(255, 255, 255, 0.6);
@@ -559,6 +560,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .modal-subscribe {
 margin-top: 16px;
+align-items: center;
 }
 
 .footer-subscribe {
@@ -573,10 +575,13 @@ margin-top: 16px;
 
 .footer-main-subscribe {
   margin-left: 80px;
+  display: flex;
   
 }
 
 .subscribe-push {
+  /* display: flex; */
+  /* position: absolute; */
 }
 
 .subscribe-button {
@@ -590,7 +595,6 @@ margin-top: 16px;
   padding: 8px 24px;
   gap: 16px;
   color: var(--background-color);
-  position: absolute;
   background: var(--hover-color);
   border-radius: 4px;
   border: none;
@@ -843,10 +847,10 @@ margin-top: 16px;
   height: 56px;
 }
 
-.submit-button:hover,
-.submit-button:focus {
+.submit-button:is(:hover, :focus),
+.subscribe-button:is(:hover, :focus) {
   background: var(--hover-btn-color);
   border-color: var(--hover-btn-color);
   transition: background-color 250ms var(--cubic);
-
 }
+
