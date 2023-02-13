@@ -533,15 +533,17 @@ img {
 
 .online-input::placeholder {
   font-size: 12px;
-line-height: 2;
-display: flex;
-justify-content: center;
-align-items: center;
-letter-spacing: 0.04em;
-color: rgba(255, 255, 255, 0.6);
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .online-input {
+  justify-content: center;
+  align-items: center;
   padding-left: 16px;
   height: 40px;
   width: 264px;
@@ -559,8 +561,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .modal-subscribe {
-margin-top: 16px;
-align-items: center;
+  margin-top: 16px;
+  align-items: center;
 }
 
 .footer-subscribe {
@@ -576,7 +578,7 @@ align-items: center;
 .footer-main-subscribe {
   margin-left: 80px;
   display: flex;
-  
+
 }
 
 .subscribe-push {
@@ -768,7 +770,7 @@ align-items: center;
 .modal-input-text span,
 .modal-input-text {
   margin-bottom: 4px;
-  display: block; 
+  display: block;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.04em;
@@ -798,13 +800,15 @@ align-items: center;
   margin-bottom: 24px;
 }
 
-::placeholder {
+.online-input::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  /* justify-content: center; */
+  /* align-items: center; */
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .check-text span {
@@ -820,7 +824,7 @@ align-items: center;
   fill: transparent
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked+.check-text span {
   background-color: var(--hover-btn-color);
   border: none;
   fill: var(--background-color);
@@ -853,4 +857,3 @@ align-items: center;
   border-color: var(--hover-btn-color);
   transition: background-color 250ms var(--cubic);
 }
-
