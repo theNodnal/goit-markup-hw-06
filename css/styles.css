@@ -833,6 +833,7 @@ img {
 
 .privacy-policy {
   color: var(--hover-color);
+  margin-left: 3px;
 }
 
 
